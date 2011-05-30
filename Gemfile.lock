@@ -16,7 +16,6 @@ PATH
   remote: .
   specs:
     artisan_engine_listability (0.0.1)
-      ancestry (= 1.2.4)
       artisan_engine_core
 
 GEM
@@ -49,8 +48,6 @@ GEM
       activemodel (= 3.0.7)
       activesupport (= 3.0.7)
     activesupport (3.0.7)
-    ancestry (1.2.4)
-      activerecord (>= 2.2.2)
     arel (2.0.10)
     babosa (0.3.4)
     barista (1.0.0)

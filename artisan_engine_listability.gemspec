@@ -9,8 +9,7 @@ Gem::Specification.new do |s|
   ## --------------------------- Basics --------------------------- ##
   
   s.add_runtime_dependency      'artisan_engine_core'
-  s.add_runtime_dependency      'ancestry',             '1.2.4'
-  
+
   # ------------------- Development Dependencies ------------------- #
   ## ------------------------- Test Suite ------------------------- ##
   
