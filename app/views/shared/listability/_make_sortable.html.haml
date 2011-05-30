@@ -1,0 +1,21 @@
+- url		  	 ||= type.to_s.pluralize
+- parent_div ||= "#" + url
+- child_div  ||= "." + type.to_s
+
+= content_for :javascripts do
+	:javascript
+		$( document ).ready( function() {
+			$( '#{ parent_div }' ).sortable({
+				items: 			'#{ child_div }',
+				handle:			'.handle',
+		
+				update:			function() {
+										$.ajax( {
+											type: 	 'post',
+											url: 		 '/sort/#{ url }',
+											data:		 $( this ).sortable( 'serialize' ),
+											dataType: 'script'
+										} );	
+									}
+			});
+		});
