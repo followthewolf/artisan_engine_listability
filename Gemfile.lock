@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:followthewolf/artisan_engine_core.git
-  revision: 940b7fae514f42bc6c5d92741722029b65138526
+  revision: ee8285d5291d0b10bb15bab08a104312476f57d3
   specs:
     artisan_engine_core (0.0.1)
       barista (= 1.0.0)
