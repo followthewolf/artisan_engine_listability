@@ -1,5 +1,6 @@
-PATH
-  remote: ../core
+GIT
+  remote: git@github.com:followthewolf/artisan_engine_core.git
+  revision: eba562bd307447214d87128fb1dde8e9203d5694
   specs:
     artisan_engine_core (0.0.1)
       barista (= 1.0.0)
