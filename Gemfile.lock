@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:followthewolf/artisan_engine_core.git
-  revision: eba562bd307447214d87128fb1dde8e9203d5694
+  revision: 05d49a809f6974d5bd19149197c19140e9abaeed
   specs:
     artisan_engine_core (0.0.1)
       barista (= 1.0.0)
@@ -145,7 +145,7 @@ GEM
       railties (~> 3.0)
       rspec (~> 2.5.0)
     rubyzip (0.9.4)
-    sass (3.1.1)
+    sass (3.1.2)
     selenium-webdriver (0.2.0)
       childprocess (>= 0.1.7)
       ffi (>= 1.0.7)
