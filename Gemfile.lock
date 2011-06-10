@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:followthewolf/artisan_engine_core.git
-  revision: d02d2219633c2c20efaf0e6a518cc1669cf2df26
+  revision: 2ddf4c7bc7903c819b706867c16c0e3dcc6ac139
   specs:
     artisan_engine_core (0.0.1)
       barista (= 1.0.0)
@@ -49,7 +49,7 @@ GEM
       activesupport (= 3.0.7)
     activesupport (3.0.7)
     arel (2.0.10)
-    babosa (0.3.4)
+    babosa (0.3.5)
     barista (1.0.0)
       coffee-script (~> 2.1.1)
     builder (2.1.2)
