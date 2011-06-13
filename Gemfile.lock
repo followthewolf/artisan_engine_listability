@@ -1,6 +1,11 @@
-GIT
-  remote: git@github.com:followthewolf/artisan_engine_core.git
-  revision: 6334c687f6b817495da8d2c7d2a56cb9cabeb53c
+PATH
+  remote: .
+  specs:
+    artisan_engine_listability (0.0.1)
+      artisan_engine_core
+
+PATH
+  remote: ../core
   specs:
     artisan_engine_core (0.0.1)
       barista (= 1.0.0)
@@ -11,12 +16,6 @@ GIT
       jquery-rails (= 1.0)
       rails (= 3.0.7)
       rdiscount (= 1.6.8)
-
-PATH
-  remote: .
-  specs:
-    artisan_engine_listability (0.0.1)
-      artisan_engine_core
 
 GEM
   remote: http://rubygems.org/

@@ -1,13 +1,9 @@
 module ArtisanEngine
   module Listability
     module HasListability
-      
-      def self.included( base )
-        base.extend ClassMethods
-      end
+      extend ActiveSupport::Concern
       
       module ClassMethods
-        
         def has_listability( options = {} )
           
           class_eval <<-function
@@ -24,18 +20,16 @@ module ArtisanEngine
               scope_class  = options[ :within ]
               scoped_class = self
               
-              scope         :in_position, lambda {
-                              joins( scope_class ).
-                              order( "#{ scope_class.to_plural_s }.position ASC" ).
-                              order( "#{ scoped_class.to_plural_s }.position ASC" )
-                            }
+              scope :in_position, lambda {
+                      joins( scope_class ).
+                      order( "#{ scope_class.to_plural_s }.position ASC" ).
+                      order( "#{ scoped_class.to_plural_s }.position ASC" )
+                    }
             else
-              scope         :in_position, order( "position ASC" )
+              scope :in_position, order( "position ASC" )
             end
             
           end
-          
-          include ArtisanEngine::Listability::HasListability::InstanceMethods
         end
         
       end
@@ -65,7 +59,8 @@ module ArtisanEngine
 
           def add_at_lowest_position
             self.position = self.class.order( "position ASC" )
-                                      .last.position + 1
+                                      .last
+                                      .position + 1
           end
           
           def add_at_lowest_position_in_scope
